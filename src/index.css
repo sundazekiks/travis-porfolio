@@ -26,6 +26,9 @@
 
   --animate-expe: expe 1s ease-in-out 1s forwards;
 
+
+  --breakpoint-iphone11:  390px;
+
   @keyframes expe {
     from {
       opacity: 0;
