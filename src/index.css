@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --font-montserrat: 'Montserrat', sans-serif;
+  --animate-fadeIn: fadeIn 1s ease-in-out forwards;
+  --animate-fadeInDelayed: fadeInDown 1s ease-in-out 5s;
+  --animate-fadeInUp: fadeInUp 1s ease-in-out;
+  --animate-fadeInDown: fadeInDown 1s ease-in-out;
+  --animate-fadeInLeft: fadeInLeft 1s ease-in-out;
+  --animate-fadeInRight: fadeInRight 1s ease-in-out;
+  --animate-slideInLeft: slideInLeft 1s ease-in-out;
+  --animate-slideInRight: slideInRight 1s ease-in-out;
+
+  --animate-growdown: growdown 1s ease-in-out 1s forwards;
+  --animate-growdown1: growdown 0.9s ease-in-out 2s forwards;
+  --animate-growdownDelayed: growdown 1s ease-in-out 4s forwards;
+
+  --animate-lineDown: lineDown 1s ease-in-out 0.7s forwards;
+  --animate-lineDown2: lineDown 1s ease-in-out 1.5s forwards;
+  --animate-lineDown3: lineDown 1s ease-in-out 2.5s forwards;
+
+  --animate-fadeIn1: fadeIn 1s ease-in-out 0.7s forwards;
+  --animate-fadeIn2: fadeIn 1s ease-in-out 1.5s forwards;
+  --animate-fadeIn3: fadeIn 1s ease-in-out 2.5s forwards;
+
+  --animate-expe: expe 1s ease-in-out 1s forwards;
+
+  @keyframes expe {
+    from {
+      opacity: 0;
+      height: 0;
+      border-bottom: 1px solid black;
+    }
+    to{
+      opacity: 1;
+      height: fit-content;
+      border-bottom: none;
+    }
+  }
+
+  @keyframes lineDown {
+    0% {
+      height: 0;
+    }
+    100%{
+      height: 100%;
+    }
+  }
+
+  @keyframes growdown{
+    0% {
+      height: 0;
+    } 
+    100% {
+      height: 100%;
+    }
+  }
+
+  @keyframes slideInRight {
+    0% { w: 0; }
+    100% { w: 100%; }
+  }
+
+  @keyframes slideInLeft {
+    0% { w: 0; }
+    100% { w: 100%; }
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInLeft {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes fadeInRight {
+    0% { opacity: 0; transform: translateX(20px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+}
