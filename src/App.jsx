@@ -98,8 +98,8 @@ function App() {
         </div>
       </div>
     </div>
-    <hr className="my-10 "/>
-    <div className="flex flex-col items-center">
+    <hr className="my-10 iphone11:my-5"/>
+    <div className="flex flex-col items-center iphone11:p-10">
         <h1 className="text-xs font-bold">&copy; Travis Abuton 2025</h1>
     </div>
   </div>)
