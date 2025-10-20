@@ -18,7 +18,7 @@ function ProfileCard({ sendDataToParent }) {
     }, [sendDataToParent])
   
     return(
-    <div className="w-full h-fit border p-3 rounded-xs border-gray-300 hover:scale-[1.02] transition-transform duration-500 ease-in-out opacity-0 animate-fadeIn1" ref={profileRef}>
+    <div className="md:w-full h-fit border p-3 rounded-xs border-gray-300 hover:scale-[1.02] transition-transform duration-500 ease-in-out opacity-0 animate-fadeIn1" ref={profileRef}>
         <h1 className="text-[15px] font-montserrat pl-2">PROFILE</h1>
         <hr className="mb-4 mt-2 border-gray-300"/>
         <p className="text-xs font-montserrat pl-2">

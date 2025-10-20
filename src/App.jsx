@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-  <div className="w-full h-fit bg-black/20 px-100 py-10 md:px-40 sm:px-5 relative iphone11:p-0 iphone11:w-fit">
+  <div className="md:w-full md:h-fit bg-black/20 px-100 md:py-10 md:px-40 sm:px-5 relative iphone11:p-0 iphone11:w-fit">
     {/* ChatBot */}
     <button className="fixed bottom-10 right-10 text-xs flex gap-2 justify-center items-center bg-black text-white py-2 px-5 rounded-xl cursor-pointer hover:bg-white hover:text-black transition-all duration-500 hover:scale-110 z-40">
       <FontAwesomeIcon icon={faMessage}/>Chat with Travis
@@ -41,10 +41,10 @@ function App() {
       {/* Image Holder, Title and Name */}
       <div className="p-5 flex iphone11:w-full">
         <div className="flex items-center gap-2 px-2 py-4">
-          <img src="https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-1/503649847_3323202864484519_1031675443097469220_n.jpg?stp=cp6_dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeHTJny2mjCQHa3VBJHL24Ubve9u2zWDmL-9727bNYOYv29L5idmMm-ujGGZyc92g5UQjh4ugwffEkTAkX4oCjBb&_nc_ohc=3dd952CaRbUQ7kNvwE9hQBl&_nc_oc=AdkKQ1dLR2AaNWiG-pyr36fr3Czht-ijStX-TevksK-XJN3tvfh0NThHZ3p-S_lp-YIp4rR8SvIKlbblUjnma7_D&_nc_zt=24&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=tii5-wS8H0WggO7c3OVSog&oh=00_AfcgJN562gqXVexreNucOUiYhGRyeYZrlHJYmoNFPPsxCA&oe=68F736C0" alt="profile-picture" className="w-35 rounded-xl animate-fadeIn iphone11:w-[100px]" />
+          <img src="https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-1/503649847_3323202864484519_1031675443097469220_n.jpg?stp=cp6_dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeHTJny2mjCQHa3VBJHL24Ubve9u2zWDmL-9727bNYOYv29L5idmMm-ujGGZyc92g5UQjh4ugwffEkTAkX4oCjBb&_nc_ohc=3dd952CaRbUQ7kNvwE9hQBl&_nc_oc=AdkKQ1dLR2AaNWiG-pyr36fr3Czht-ijStX-TevksK-XJN3tvfh0NThHZ3p-S_lp-YIp4rR8SvIKlbblUjnma7_D&_nc_zt=24&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=tii5-wS8H0WggO7c3OVSog&oh=00_AfcgJN562gqXVexreNucOUiYhGRyeYZrlHJYmoNFPPsxCA&oe=68F736C0" alt="profile-picture" className="md:w-35 rounded-xl animate-fadeIn iphone11:w-[100px]" />
           <div className=" animate-fadeInLeft">
-            <h1 className="font-montserrat text-2xl indent-1 mt-4 iphone11:text-[15px]">TRAVIS ABUTON</h1>
-            <p className="font-montserrat text-xs mt-2 indent-2 iphone11:text-[8px]">FULL STACK DEVELOPER</p>
+            <h1 className="font-montserrat md:text-3xl indent-1 mt-4 iphone11:text-[15px]">TRAVIS ABUTON</h1>
+            <p className="font-montserrat md:text-[15px] mt-2 indent-2 iphone11:text-[8px]">FULL STACK DEVELOPER</p>
             {/* Socials Container */}
             <div className="flex flex-row gap-1 ml-2 mt-2 text-lg">
               <a href="#" className="text-gray-400"><FontAwesomeIcon icon={faFacebook}/></a>
@@ -54,21 +54,21 @@ function App() {
             </div>
             {/* CTA */}
             <div className="relative top-4 flex flex-row gap-2 p-1">
-                <button className=" py-0.5 px-3 rounded-xs bg-gray-900 text-white font-montserrat hover:bg-white hover:text-black transition-all duration-700 delay-200 cursor-pointer flex items-center gap-2 text-[14px] iphone11:text-[9px]"><FontAwesomeIcon icon={faCalendar} className="text-[10px]"/> Set an appointment</button>
+                <button className=" py-0.5 px-3 rounded-xs bg-gray-900 text-white font-montserrat hover:bg-white hover:text-black transition-all duration-700 delay-200 cursor-pointer flex items-center gap-2 md:text-[14px] iphone11:text-[9px]"><FontAwesomeIcon icon={faCalendar} className="text-[10px]"/> Set an appointment</button>
             </div>
           </div>
         </div>
       </div>
       <hr className="border-1 animate-slideInLeft" />
       {/* Body Container */}
-      <div className="grid grid-cols-[300px_10px_1fr] gap-3 h-fit py-10 sm:flex sm:flex-col iphone11:flex iphone11:flex-col">
+      <div className="lg:grid lg:grid-cols-[300px_10px_1fr] gap-3 h-fit py-10  sm:flex sm:flex-col iphone11:flex iphone11:flex-col">
         {/* left side bar */}
         <div className="h-fit col-start-1 flex flex-col items-center gap-3 p-2">
           <InfoCard/>
           <SkillsCard/>
         </div>
         {/* Divider */}
-        <div className="h-full flex flex-col items-center py-2 gap-2 sm:hidden iphone11:hidden">
+        <div className="h-full md:flex flex-col items-center py-2 gap-2 sm:hidden iphone11:hidden">
           <div className="w-full flex flex-col items-center pt-4 pb-2 gap-1" style={{ height: `${profDiv}px` }}>
             <div className="flex flex-col items-center h-0 justify-center animate-lineDown gap-1">
               <svg className="w-7 h-7 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor"><path d="M463 448.2C440.9 409.8 399.4 384 352 384L288 384C240.6 384 199.1 409.8 177 448.2C212.2 487.4 263.2 512 320 512C376.8 512 427.8 487.3 463 448.2zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320zM320 336C359.8 336 392 303.8 392 264C392 224.2 359.8 192 320 192C280.2 192 248 224.2 248 264C248 303.8 280.2 336 320 336z"/></svg>
@@ -98,8 +98,8 @@ function App() {
         </div>
       </div>
     </div>
-    <hr className="my-10 iphone11:my-5"/>
-    <div className="flex flex-col items-center iphone11:p-10">
+    <hr className="md:my-10 iphone11:my-5"/>
+    <div className="flex flex-col items-center md:p-4 iphone11:p-5">
         <h1 className="text-xs font-bold">&copy; Travis Abuton 2025</h1>
     </div>
   </div>)
